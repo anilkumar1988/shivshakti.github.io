@@ -1,0 +1,282 @@
+html{
+    font-size: 100%;
+}
+
+/* 
+font-size: 62.5%;
+font-size: 10px;
+font-size: 1rem;
+*/
+
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navbar--height: 5.9rem;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo {
+    margin: 1.0rem 3.4rem;
+}
+
+#logo img {
+    height: 5.9rem;
+    margin: .3rem .6rem;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 2.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: .3rem 2.2rem;
+    border-radius: 2.5rem;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3 150px;
+    height: 55.0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./img/web2.jpeg') no-repeat center center/cover;
+    height: 64.2rem;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-size: 3.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+/*service container*/
+.h-primary-center{
+    font-size: 2rem;
+    text-align: center;
+
+}
+.h-primary-center {
+    font-size: 2.5rem;
+    color: green;
+    
+}
+
+
+.box h2{
+    font-family: cursive;
+    color: green;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.box p{
+    font-family: cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.box img{
+    height: 60rem;
+    width: 100%;
+}
+#service .box{
+    border: .2rem solid brown;
+    padding: 3.4rem;
+    margin: .2rem 5.5rem;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 2.0rem;
+    align-items: center;
+    
+}
+#service .box img{
+    display: flex;
+    background-size: cover;
+    margin: auto;
+    width: 30%;
+   
+    
+}
+#service img {
+    height: 50rem;
+    width: 100%;
+}
+#service .box p{
+    font-family: cursive;
+    
+}
+#services p {
+    font-size: 2rem;
+
+
+
+}
+
+.client-item p{
+    font-family: cursive;
+    color: rgb(20, 13, 14);
+    font-size: 2rem;
+    
+}
+.client-section p {
+    font-size: 2rem;
+
+}
+#client-section h1{
+    font-family: cursive;
+    color: blue;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+/*jobb section */
+
+#jobb img{
+    display: flex;
+    height: 70rem;
+    width: 100%;
+    justify-content: center;
+}
+.alltomjobb{
+    display: grid;
+    float: left;
+    width: 100%;
+}
+.alltomjobb p {
+    text-align: center;
+    font-size: 2rem;
+}
+.alltomjobb img{
+    width: 100%;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+/*for the address*/
+#address{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*for the time that going on now*/
+.container{
+    font-size: 2.3rem;
+    background-color: blanchedalmond;
+    border: 2px solid gray;
+    padding: 3.4rem;
+    margin: .4rem;
+    text-align: center;
+}
+#time{
+    font-weight: bold;
+}
+
+/*for the screen sizes*/
+@media(max-width: 1500px)and (min-width: 999px){
+    html {
+        font-size: 75%;
+    }
+
+}
+@media(max-width: 998px) and (min-width: 851px){
+    html {
+        font-size: 55%;
+    }
+
+}
+@media(max-width: 850px) and (min-width: 769){
+    html {
+        font-size: 50%;
+    }
+}
+@media(max-width: 768px) and (min-width: 451px){
+    html {
+        font-size: 45%;
+    }
+    
+}
+@media(max-width: 450px) and (min-width: 391px){
+    html {
+        font-size: 35%;
+    }
+    .alltomjobb p {
+        text-align: center;
+        font-size: 2rem;
+    }
+    #navbar{
+        position: sticky;
+    }
+}
+@media(max-width: 390px) and (min-width: 0px){
+    html {
+        font-size: 20%;
+    }
+    .alltomjobb p {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+
+

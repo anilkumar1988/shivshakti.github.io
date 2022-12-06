@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.jpg" alt="bilder är inte tillgånligt">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Hem</a></li>
+            <li class="item"><a href="#services-container">vårt Arbete</a></li>
+            <li class="item"><a href="#client-section">Våra Kunder</a></li>
+            <li class="item"><a href="mailto:rakeshpunia@gmail.com, rajeshpunia@gmail.com" target="_top">Skicka mail</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Välkommen til trädgård och städning Firma</h1>
+        <p>Vi utför jobbet till privata personer förening och till kommuner behöver som sköta trädgård, gräsklipning, sköta snow </p>
+        <p>Vi Samarbeta med Norrtälje kommune och samarbeta med täby kommune </p>
+        <!--<button class="btn">Kontakta oss</button>-->
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary-center">Vårt Arbete platser i Svrige</h1>
+        <div id="services">
+            <div class="box">
+                <h2 class="h-secondary-center">Täby Kommune</h2>
+                <p class="center">Täby kommune sköter vi snow trädgård arbete och hela Dandryd buss station </p>
+                <img src="./img/web.jpeg" alt="">
+            </div>
+            <div class="box">
+                <h2 class="h-secondary-center">Norrtälje Kommune</h2>
+                <p class="center">vi jobbar i Norrtälje kommune vi sköter snow på vinterna och vi städar sand på våren från gåtorna </p>
+                <img src="./img/web1.jpeg" alt="">
+            </div>
+            <div class="box">
+                <h2 class="h-secondary-center">Stockholm Kommune</h2>
+                <p class="center">vi sköter snow på vinterna vi gör vad vi lovar i tid</p>
+                <img src="./img/web3.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary-center">våra arbets partner</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/täby.png" alt="bilden hittades inte">
+                <p>Vi sköter Täby kommune ungefår 5% i hela arbete</p>
+            </div>
+          
+            <div class="client-item">
+                <img src="img/norrtälje.png" alt="bilden hittades inte">
+                <p>Vi sköter snown i Norrtälje hela nya äfferar område </p>
+            </div>
+            <div class="client-item">
+                <img src="img/stockhol.png" alt="bilden hittades inte">
+                <p>Vi sköter myckey i norrort nära täby, Dandryd sjukhus, Dandryd station</p>
+            </div>
+        </div>
+
+    </section>
+    <br>
+
+    <section id="jobb">
+        <div class="alltomjobb">
+            <img src="img/snowtruck.jpg" alt="">
+            <p>
+                Om det är första gången du anlitar någon för trädgårdsskötsel 
+                så kan det tänkas att det finns en hel del i trädgården som behöver 
+                ändras för att matcha era önskemål. Varje trädgård är unik och kräver
+                 olika underhåll. 
+                Kontakta oss för rådgivning om vad som krävs för just din trädgård.
+            </p>
+            <p>
+                Vi erbjuder trädgårdsskötsel Täby, Norrtälje, Stockholm</p>
+        </div>
+        <div class="alltomjobb">
+            <img src="img/homeclean.jpg" alt="Städa hem">
+            <p>
+                Om det är första gången du anlitar någon för trädgårdsskötsel
+                 så kan det tänkas att det finns en hel del i trädgården som 
+                 behöver ändras för att matcha era önskemål. Varje trädgård 
+                 är unik och kräver olika underhåll. Kontakta oss för rådgivning 
+                 om vad som krävs för just din trädgård.
+            </p>
+        </div>
+        <div class="alltomjobb">
+            <img src="img/rajesh.jpg" alt="ta hand om trädgård">
+            <p>Vi samarbetar med trädgårdsskötare i hela Stockholm som är
+                 kvalitetskontrollerade så att de har all den kunskap som krävs 
+                 för att hantera din trädgårdsskötsel på ett proffsigt sätt. Våra
+                  trädgårdsskötare kan även hjälpa dig att planera din trädgård och anpassa 
+                  den efter er livsstil såväl som att ta hand om den löpande trädgårdsskötseln.</p>
+
+                  <p>Om det är första gången du anlitar någon för trädgårdsskötsel så kan det tänkas att det finns en hel del i trädgården som behöver ändras för att matcha era önskemål. Varje trädgård är unik och kräver olika underhåll. Kontakta oss för rådgivning om vad som krävs för just din trädgård.</p>
+        </div>
+
+    </section>
+    <hr/>
+<address id="address">
+    Telefontid: måndag-fredag 09.00-16.00 <br>
+    Tel: 072-020-1085 <br>
+    E-post: <a href="mailto:rakeshpunia@gmail.com, rajeshpunia@gmail.com">Mejla oss</a>
+</address>
+
+    <!--for the time is running under the website-->
+    <div class="container">
+        <span id="time"></span>
+    </div>
+    <!--Call method-->
+
+    <!--<h2 id="title">The Call Method </h2>-->
+    
+
+    <script>
+
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+
+        setTimeout(() => {
+            alert("Ni kan kontakta oss på 072-020-1085 ")
+        }, 30000);
+        console.log("its down line")
+
+/*function printName(first, last){
+    console.log(`$(first) $(last)`);
+    console.log(this);
+
+}
+/*
+printName.call({
+    model: `Samsung Galaxy S9`,
+    color: `black`
+}, `Domenic`, `Smith`)
+
+printName2 = printName.bind({
+    model: `Samsung Galaxy S9`,
+    color: `black`
+}, `Domenic`, `Smith`);
+
+printName2();*/
+
+    </script>
+</body>
+</html>
